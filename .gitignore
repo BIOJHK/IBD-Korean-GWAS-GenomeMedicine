@@ -1,0 +1,33 @@
+# Individual-level data and intermediate results must never be committed
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.bcf
+*.bcf.csi
+*.bam
+*.bai
+*.cram
+*.bed
+*.bim
+*.fam
+*.pgen
+*.pvar
+*.psam
+*.raw
+*.vcor
+*.cns
+*.cnr
+*.log
+*.err
+/input/
+/output/
+
+# OS / editor / language artifacts
+.DS_Store
+Thumbs.db
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

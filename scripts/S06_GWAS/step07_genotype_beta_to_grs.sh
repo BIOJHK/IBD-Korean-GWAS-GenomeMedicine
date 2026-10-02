@@ -1,0 +1,1 @@
+for i in $(ls 05.Beta_pvalue_check/*_0.1M.rankPbeta+.hybrid);do out=$(basename $i | awk -F "us" '{print $1}');python /input/tools/script.py $i 06.Genotype_beta_convert/$out"us_0.1M.GT.needtocheck.txt" 06.Genotype_beta_convert/$out"us_0.1M.GT.converted.txt" ;done

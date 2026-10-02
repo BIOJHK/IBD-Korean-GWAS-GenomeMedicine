@@ -1,0 +1,1 @@
+for i in $(ls *bcf | grep -v "0.1M");do out=$(basename $i | cut -d "." -f 1,2,3,4);/input/tools/plink2 --pfile 02.hwe_filter/$out --pca 30 --pheno $out.pheno.txt --make-pfile --threads 20 --out 03.PCA30/$out 1>03.PCA30/$out.log 2>03.PCA30/$out.err ;done

@@ -1,0 +1,1 @@
+for i in $(ls 00.Geno_mind/*pgen);do out=$(basename $i | cut -d "." -f 1,2,3,4);/input/tools/plink2 --pfile 00.Geno_mind/$out --hwe 1e-6 keep-fewhet --maf 0.01 --make-pfile --out 02.hwe_filter/$out 1>02.hwe_filter/$out.log 2>02.hwe_filter/$out.err ;done
